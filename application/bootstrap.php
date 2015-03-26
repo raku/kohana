@@ -65,10 +65,6 @@ mb_substitute_character('none');
 
 // -- Configuration and initialization -----------------------------------------
 
-/**
- * Set the default language
- */
-I18n::lang('en-us');
 
 if (isset($_SERVER['SERVER_PROTOCOL']))
 {
@@ -130,6 +126,11 @@ Kohana::modules(array(
 	// 'unittest'   => MODPATH.'unittest',   // Unit testing
 	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 	));
+
+/**
+ * Set the default language
+ */
+I18n::lang('en-us');
 
 /**
  * Cookie Salt
